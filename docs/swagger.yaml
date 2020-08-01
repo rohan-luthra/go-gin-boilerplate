@@ -1,0 +1,41 @@
+basePath: /
+definitions:
+  models.User:
+    properties:
+      id:
+        type: string
+      username:
+        type: string
+    required:
+    - username
+    type: object
+info:
+  contact:
+    email: support@host.com
+    name: API Support
+    url: http://www.host.com
+  description: description
+  license:
+    name: Apache 2.0
+  termsOfService: http://swagger.io/terms/
+  title: template
+  version: "1.0"
+paths:
+  /user:
+    get:
+      consumes:
+      - application/json
+      description: get all users
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              items:
+                $ref: '#/definitions/models.User'
+              type: array
+            type: array
+      summary: get all users
+swagger: "2.0"
