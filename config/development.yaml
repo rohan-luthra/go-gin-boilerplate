@@ -1,3 +1,3 @@
-mongouri: mongodb+srv://admin:admin123@cluster0.7plps.mongodb.net/?retryWrites=true&w=majority
+mongouri: <your mongouri>
 
-port: 3000
+port: <port_no>
